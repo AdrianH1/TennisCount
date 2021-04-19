@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/setcount"
+    android:weightSum="4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/overview3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/layout_style">
+
+        <TextView
+            android:id="@+id/txt_player1_overview3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Player 1"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/overview3_gameone_player1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_player1_overview3"
+            android:layout_toEndOf="@+id/txt_player1_overview3"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp" />
+
+        <EditText
+            android:id="@+id/overview3_gamethree_player1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_player1_overview3"
+            android:layout_alignBottom="@+id/txt_player1_overview3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/overview3_gameone_player1"
+            android:layout_toRightOf="@+id/overview3_gameone_player1"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/overview_gamethree_player1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/overview3_gamethree_player1"
+            android:layout_alignBottom="@+id/overview3_gamethree_player1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/overview3_gamethree_player1"
+            android:layout_toRightOf="@+id/overview3_gamethree_player1"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/overview2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/layout_style">
+
+
+        <TextView
+            android:id="@+id/txt_player2_overview"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Player 2"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/overview_gameone_player2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_player2_overview"
+            android:layout_toEndOf="@+id/txt_player2_overview"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp" />
+
+        <EditText
+            android:id="@+id/overview_gametwo_player2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_player2_overview"
+            android:layout_alignBottom="@+id/txt_player2_overview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/overview_gameone_player2"
+            android:layout_toRightOf="@+id/overview_gameone_player2"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/overview_gamethree_player2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/overview_gametwo_player2"
+            android:layout_alignBottom="@+id/overview_gametwo_player2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/overview_gametwo_player2"
+            android:layout_toRightOf="@+id/overview_gametwo_player2"
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/functions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/layout_style">
+
+        <Button
+            android:id="@+id/btn_startnextgame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start next Game"
+            />
+
+        <Button
+            android:id="@+id/btn_endmatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Match"
+            android:layout_below="@+id/btn_startnextgame" />
+    </RelativeLayout>
+
+</LinearLayout>

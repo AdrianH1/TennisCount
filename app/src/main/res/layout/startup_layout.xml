@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/startup"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/layout_style"
+        android:id="@+id/player1"
+        android:layout_weight="1"
+        >
+
+        <CheckBox
+            android:id="@+id/ckbox_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edit_player1"
+            android:layout_alignBottom="@+id/edit_player1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:text="First?"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/edit_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_player1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txt_player1"
+            android:layout_marginBottom="36dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txt_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_player1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:text="Player 1"
+            android:textSize="24dp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/layout_style">
+
+        <CheckBox
+            android:id="@+id/ckbox_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edit_player2"
+            android:layout_alignBottom="@+id/edit_player2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:text="First?"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/edit_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_player2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txt_player2"
+            android:layout_marginBottom="36dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txt_player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_player2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:text="Player 2"
+            android:textSize="24dp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/layout_style">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spin_set_count"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/btn_startnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start New"
+            android:layout_below="@+id/btn_start" />
+    </RelativeLayout>
+
+    <!-- other views, with a total layout_weight of 2 -->
+
+</LinearLayout>
